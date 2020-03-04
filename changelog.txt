@@ -1,0 +1,760 @@
+DEMO 6 CHANGELOG
+
+Key: (contributors)
++ Buff
+- Nerf
+= Misc change
+? Lack of patch notes
+
+
+GENERAL:
+
+AI: (Monte)
++ By default, CPUs will DI and tech randomly, but in Training Mode, you can set their DI behavior to specific options (up, down-right, etc)
+
+Online: (HFF, David, Monte, Art, and all of you 80+ innocent people who got banned)
++ You will no longer be banned for playing Delta online
+
+Autoupdater: (HFF)
++ Autoupdater now downloads individual files, allowing for more frequent, small updates
+
+Engine: (HFF, David, Monte)
++ Attacks now beat grabs
++ SDI is better now
++ 9b Dashcancelling is back
++ You can crouch during your initial dash
+- Getting hit with a meteor while grounded now deals only an additional 5% of hitstun rather than 20%
+7/14/2019
++ Command grabs now beat attacks... except for Sandbag and Sora's sspec. Working on that.
+
+Misc: (David)
++ v0.8 and v0.9 intros work again
++ Default replay names are more intuitive
+7/28/2019
++ Various bugfixes and optimizations
+
+Menus: (Matz)
++ Menus overhauled
++ Misc CSS changes
+
+
+CHARACTERS:
+
+Captain Falcon: (27)
++ aerial falcon kick, if land canceled within the first 9 frames, will have 1 frame of landing lag
+= i think also on the first frame you can also drop through a platform instantly so have fun with that
+- smash 4 stomp weak hit because obligatory
++ upsmash first hit angle tweaked (90 > 100) and weightKB made consistent (20,30 > 30,30)
++ falcon dive scales slightly higher (55 > 65) and airaccel is now no longer lower than falcons base airaccel (0.8 > 1)
++ max airspeed increased (8 > 8.1)
++ gentleman is now usable
++ a.RB scaling increased
++ reverse FP slightly stronger
++ g.RB goes directly into helpless when not grounded, allowing you to drift back and grab ledge if prescient
++ upb distance very slightly buffed, horizontal drift options made wider
+= two secret tech
+= falcon kick walljump works properly
+
+Ichigo: (MedK, Strife, David)
++ Stats made middleground between rn and 1.1
++ Except first jump, which has been made same as 1.1 (13 > 13.8), and shorthop, which is still the same.
+- 1.1 rolls.
++ Increased invincibility frames to match anim (2-8 > 2-11).
++ Air dodge is fixed. No longer infinite + has invincibility. Invincibility is from frames 3-16.
+- Dthrow BKB: 90 -> 70.
++ Getsuga Tenshō (Neutral-B) revamped. It's now a single hit move and it travels a bit faster, as well as hitting at a lower angle and has faster startup.
+- Getsuga Tenshō  reenableTimer increased: 28 -> 40
++ Engetsuzan (Side-B) is now jump cancellable on the ground. It cannot be jump cancelled when the attack is charging, nor when the attacking hitbox is out, and the attacking hitbox only comes out when he reappears.
++ Kōtei-ki Tōshin (Up-B) has been given a finishing hit.
++ Gazan (Down-B) is now controllable on the ground and the xSpeed cap increased: 4 -> 6.
+- Neutral-B now behaves knockback-wise exactly like Blade Beam in Smash 4. It travels a bit faster, but is also active for a much shorter time.
++ Side-B's actual attack is much stronger, rewarding you for spacing it well.
+- Side-B's jump cancel window is significantly shorter. You can also no longer jump cancel shortly after moving.
+- JC Side-B also has 6 frames before you can use any aerials out of it, significantly hindering it as an approach.
+? Ichigo, but with heavyLand changes
++ Ichigo, but I de-broke HeavyLand
+- Down Special: You can now only move when Ichigo starts to move
+- Side Special: Is no longer Marth's final smash
++ Ichigo's aerials no longer have a forced delay after a jump cancelled Side-B
+- Ichigo's Side-B cancel window has been shortened. You can now only cancel it when you are moving.
+
+Isaac: (MedK, Strife)
+- 1.1 roll.
++ 1.1 stats.
+- N-Air 1 angle increased (20 > 35).
++ KBG on both hits increased to compensate (10 > 35).
++ 9c Up-B aka Up-B goes much higher.
+- 1.1 Isaac mostly ported.
+- Nair reverted to 1.1 Nair.
+- Up Throw has much higher BKB making combos and kill confirms much more difficult.
+- Down Throw reworked. Now sends at an angle that can potentially DI trap.
+- Move Down forces the opponent into Tumble.
++ Vine now is harder to break out of.
+
+Sonic: (MedK, David, Musaab, Strife)
++ Top secret very meaningful and definitely useful change
+= Feels more like pre-patch Lloyd and less like dash-less Unlimited Sonic.
++ U-Tilt stops you a bit on startup, and when you hit ppl
++ U-Smash is now two hits, links properly and first hit doesn't scale with charge or with opponent's damage.
+= Last U-Smash hit direction behaves like in vanilla.
++ U-Air hit 1 behaves closer to PM's.
++ Aerial Side-B is no longer useless if you end up landing while doing it. N-Air disable cooldown decreased (10 > 5), and if you do it uncharged, you'll be able to Side-B > Up-B.
++ There is also a new charging state on Side-B, between 1st and 2nd states. (Come out frame 4/14 > 4/9/14).
+= Movement is now literally pre-patch Lloyd.
++ N-Air only gets disabled by aerial Side-B if you hit an opponent or a shield with it.
++ You'll be able to aerial Side-B > Up-B after the second state of charging too.
++ Aerial Side-B tech now makes you go to land instead of heavyland, so it's actually useful.
++ shorter heavyland animation (it's still way longer than regular landing lol)
++ less endlag on fsmash
+= New PA
++ Sonic: Added modified BAir Sprites
++ Fixed a crash bug on Sonic
++ Light Dash now gets it's properties for jump cancel back, and it no longer disables your jump.
++ Spin Dash now has two frames of invincibility on startup.
+- No invuln frames on spindash, no side b cancels, etc
++ But now nair doesn't have heavy lag and dair is stronger than before :)
+- You cannot use Up Special after using Forward Special.
+- Forward Smash and Down Smash reset your movement.
++ Down Tilt no longer resets your movement.
+- Neutral Air sends at a lower angle.
+- Down Tilt deals less damage.
+- Neutral Air has 2 more frames of cooldown.
+
+Samus: (Strife, David)
++ Traction decreased to 0.78, buffing her pivot grab indirectly.
++ Jab 1 has set knockback whilst Jab 2 now has higher knockback scaling. This allows for some better linking.
++ Forward Tilt has some extra base knockback.
++ Up Tilt has a hitbox that meteor smashes aerial opponents at the end of the move.
+= Down Tilt sends opponents at the same angle in the opposite direction, giving it better utility as a kill move but worsening some combos.
+= Up Smash now is a much better kill move (more scaling), but combos off the move are now almost non-existent.
+- Nair no longer kills, although due to the lowered scaling, some more conversion options open up.
+- Weak Nair is less useful for combos.
+= Forward Air links together much better and has more hitlag on the weak hits, but now has worse combo ability so Fair -> Fair isn't as useful.
+- Uair's final hit sends opponents more horizontally now, which makes some combos worse.
++ Zair's sweetspot is now a powerful finishing move, however the weak hit still offers no combos off the move.
++ Forward Throw and Back Throw are marginally stronger.
++ Up Throw is stronger in both base knockback and knockback growth.
++ Missile Cancel returns.
++ Homing Missile now has a limit of 3 and is active for longer, allowing for some interesting setups.
++ Super Missile travels faster.
+- Super Missile has a limit of 1, and does a bit less damage.
++ Screw Attack in the air and the ground have been unified in terms of knockback, making the move overall much better.
+= Uair reverse hits removed. Improves consistency but streamlines followups and removes things like uair bair. Also makes it easier to DI.
+- Samus has her 1.1 roll
++ All cannon attacks (dtilt, fair, fsmash, usmash, missile) and zair now have extra shieldstun
++ Initial dash and air speed marginally improved.
++ Up Tilt now spikes on the last aerial hitbox (when the heel comes down);
++ Sweetspot Zair is much stronger.
++ Back and Up Throw are stronger.
++ Down Throw has less KB scaling.
++ Fair now consistently links but now does not combo into anything anymore
+- Weak Zair is much weaker.
+- Strong Zair is a little bit less obnoxious
+- Up Throw no longer kills ridiculously early.
+7/18/2019
+- Removed CSG
+
+PAC-MAN: (MedK, David, Strife)
+- Trampoline is fixed.
+- I'm pretty sure I fixed PAC-MAN
++ I DID NOT FIX PACMAN
+- ALL SPECIAL-RELATED BUGS ARE FIXED.
++ Up Tilt has 1 less frame of startup and 2 less frames of endlag.
++ Down Tilt now behaves like Ultimate Down Tilt. It will now pop out and then back in. It still combos just as well as before, it's just a bit safer
+- Down Tilt can't really pseudocrawl anymore.
++ Sweetspot USmash is stronger.
++ Down Smash is stronger.
++ Dair's hits have set knockback now and they transition into each other much faster.
++ Dair's final hit sends at a more horizontal angle, making it a very potent finisher.
++ Up Throw is now a very functional combo throw now.
++ Down Throw has good techchasing potential now.
+- Down Throw doesn't combo as well as it used to.
++ Bonus Fruit: Bell now stuns for longer, meaning you can actually get kill confirms off it.
+- Up Throw no longer chain grabs. It's just more akin to Vanilla but with a bit more knockback scaling.
++ Down Throw now works properly like it should, no longer being unsafe on hit. It works like an Isaac Dthrow now.
++ Up Tilt has less scaling. This was a change that I'd actually forgotten I'd implemented on a previous version
+
+Link: (MedK, ChickenZ, David)
++ D-Tilt sweetspot is now hittable.
+= Fixed DA sprites with Minty's new stuff.
+- DA stats changed. BkB and kBG no longer change depending on where you hit ppl (BkB/kBG 85,85,77/80,85,80 > 70/70).
++ D-Air is back. It can actually kill, except a bit l8. Clean hit damage increased (12 > 13).
+- U-Air damage reduced (15/13 > 13/10). Active frames reduced (5-?? > 6-??), so it matches the animation. 
++ Knockback heavily increased, it can kill at around 95% now.
++ ChickenZ managed to do a much better implementation of Link's dash attack. This is the one we'll be sticking with.
++ Fixed a visual bug on link's falling animation
+
+Yoshi +: (MedK)
++ Gravity increased (1.1 > 1.15).
++ Jumps are noticeably higher than vanilla's.
++ Tumble anim can grab ledges, like everyone else's.
+= Removed garbage code in DA.
+= Egg explosion effect is bigger, and the screen shakes more when it explodes.
++ Neutral-B gives you Luigi gravity during the move.
+- Aerial Up-B keeps a bit less of vertical momentum upon ending.
++ You now get aerial Up-B back if you die.
+- Hitstun in F-Air normalized (1.1 > 1).
+= Tweaked hitlag in U-Air.
+= Fixed issue where grab would leave the opponent visible.
++ Fixed all issues related to grounded Up-B.
+- Fixed all issues related to aerial Up-B.
+= U-Smash endlag anim tweaked.
++ All nerfs done to F-Air due to F-Air on grounded people shenanigans reverted (Hitstun 1 > 1.1, hitlag advantage 1 > 2).
+- F-Air now has two attackboxes. One for hitting ppl in the air, and another one for ppl in the ground. The one in the ground doesn't meteor (aka much less hitstun) and knockback should be acting like previously. The above change applies to the aerial attackbox.
+
+Naruto: (MedK)
++ D-Air will give you a small upwards boost on startup depending on your current vertical speed. Also tweaked the frames where it'll give you landlag so it no longer is unfair. Lastly, you can cancel it with a jump, an Up-B, or with your fall animation, from frame 18 onwards, so it's no longer a Fox F-Air.
++ Fixed Rasenshuriken. The stun box is much bigger, and it lasts for 3 more frames. Rasenshuriken projectile now has a bigger attackbox, so it'll now link most of the time.
++ Fixed D-Throw. The opponents will now go properly to Naruto's front, and it will now hit other people nearby.
+
+Goku: (MedK, David)
+- Side-B no longer eats shields for breakfast
++ Goku's taunt is better like i said it'd be
+- Dash is now 1.2 like it was supposed to. Previously it was 1.25.
+- Decreased air accel (0.8 > 0.75).
+- Damage on all moves decreased by 1%, with a few exceptions. Kamehameha levels 2 & 3  decreased
++ Lvl3 Kamehameha got a damage decrease of 0.5%.
++ All Side-Bs deal 1% more damage than in Strife's concept, because the first hit can't deal 0%. That would be wrong.
++ Slack deals 1% more damage to compensate for Side-B nerfs. It obviously doesn't fully compensate them. That would be ridiculous.
++ Most moves got their base knockback compensated. D-Smash got no compensation, while F-Smash got its kBG compensated instead.
+- F-Smash and D-Smash's BkB and kBG swapped. F-Smash/D-Smash angle 45/30 > 40/35).
+- N-Air overhauled. First hit is the one with crazy hitstun and extra SDI now. First hit is also weaker. Might change that.
+= Side-B overhauled.
++ It keeps more distance and hits make Goku go farther sideways (will be tweaked later a bit more so it becomes closer to previous version). A4 now gives Goku a boost.
++ LAND HIT FINALLY IMPLEMENTED! IT WORKS 100% OF THE TIME!
+- If you finish the move while in the ground, you will go to land animation instead of idle, therefore more endlag.
+- N-Air first hit hitstun decreased (1.2 > 1.1), hitlag too (3 > 2). BkB increased (10 > 20). Tl;dr it's now escapable after some percent
+- Tweaked Kamehameha so lvl 3 isn't way better than lvl 4. Lvl 2 made weaker so we wouldn't have another problem like that. DI distance increased in all Kame charges except lvl1.
++ Air ease in Side-B decreased (A4 also now acts like an A3) and bounces go higher vertically.
+- The boosts now behave like pre-patch horizontally (A3 still goes forwards).
++ A4 hitstun increased (1.1 > 1.12), it's weaker and sends at a 75° angle, so it now combos. Think fast tho.
+= A4 can no longer rehit after you hit that move.
+- Land hit much worse. Hitstun normalized, angle decreased (60 > 58).
++ Side-B grabbox increased, so issues with it not connecting should be less frequent.
++ BLAST FIST IS HERE!!111!1!!!!111111!!!!!
++ It's a somewhat-quick strong move (frame 7, KOs at like 120. Frame 6 but much weaker in the air) that can deal up to 20% (will prolly be nerfed soon) and grab ledges. You can angle it to your back so Goku will go less far.
+= It's disjointed, but no longer a projectile.
+- It has high endlag.
+= Aerial Blast Fist is now single hit.
++ Blast Fist is much stronger, deals more damage, KOs much sooner, on both versions. Aerial late hit direction no longer changes.
+- Second/late hit damage compensated.
+- Blast Fist now disables itself after use.
+= Shoryuken-like endlag part has its duration increased, but those new frames all allow you to cancel it into any aerial and a Kamehameha. Air ease increased (8 > 8.5). Fixed visual issues on the move.
+= Hitstun increased by one frame on Down-B. A nerf to the grounded version, but a buff to the aerial one.
+- First hit attackbox moved closer to Goku, a bit more downwards, and also shrank a bit.
++ Stats of the first and second/late hits swapped. Aerial Blast Fist is a two-hit move again. Overall active frames increased by 1; strong hit now begins at the same frame as the second explosion.
++ Goku's YSpeed is no longer decreased once he starts spinning
+= Overhauled how Blast Fist endlag works.
+- Dodge decel increased (1.1 > 1.15).
+= Random Blast Fist frames on other moves fixed (N-Air and grounded Up-B.)
+= Fixed placement issues on F-Air.
++ Side-B first hit now deals 18 frames of paralysis, so if you end up missing the grab, you can end up hitting them anyways.
++ B1's first two hits no longer use hasEffect true; direction decreased (75 > 71). Touchbox also placed further forwards.
+- DI distance also normalized, and since only the last hit counts, you'll no longer have to mash buttons in order to DI properly.
+- Down-B strong hit kBG decreased by 5 units.
+= Fixed hurtboxes and stray pixels on some moves
+= Fixed random Blast Fist frames on Side-B (Do inform me if you find bugs like this anywhere else)
+= F-Smash now stretches Goku a little so the animation won't look stiff.
++ F-Air frame data improved heavily.
++ F-Air weak hit stats (except damage) reverted to v0.9b. Strong hit made closer to v0.9b, but not 1:1.
++ F-Air damage increased (8 > 9). Angle too (270 > 280).
++ B-Air frame data slightly improved.
++ D-Air sweetspot now meteors (angle 75 > 275).
+- D-Air sweetspot hitstun reduced (120% > 100%).
++ Side-B:
++ Grounded Side-B distance greatly buffed.
++ The initial grabbox is much bigger. Witnessing the move's initial paralysis should be rare now.
+- Hitlag on Side-B decreased (18 > 14).
++ Hitting an opponent with Side-B and then failing to grab them will put you in hitlag for 8 frames and reset your jumps, allowing you to react to this and attack your opponent. It also comes with a cam shake and an effect :)
+= Multiple minor changes to Side-B's mini-attacks, such as camShake, hitlag...
+= If you fail to press A1 on the initial contact, it will take one more frame for you to be taken to the slack animation.
++ You can now exit from A1 and A2 much sooner.
++ There is now a blinking effect during the frames where you can cancel it into other stuff. That way, you won't get confused :)
+- You can no longer just start holding special (after A1/A2) in order to do B1. You must now press it, like the A variants.
++ B1 no longer acts like a windbox to innocent bystanders (Basically, Goku is top tier in doubles).
++ A4 has more hitlag.
++ You will now get Up-B back after dying or grabbing the ledge.
++ Up-B will no longer go to helpless if the move connects.
++ Blast Fist:
+  + It's now frame 3.
+  - Move rises more and takes longer to let you cancel it into other stuff.
+  - Move's damage decreased (4/15; 3/13 > 2/14.4 > 2.4)
+  + First hit's sdiDistance decreased (1 > 0.5 ground/0.2 air).
+  + Aerial first hit kBG now matches grounded's (70 > 90).
+= Minor tweaks to D-Throw.
++ Minor bugfixes applied to Side-B. Iirc that's the only thing I did.
+7/15/2019
+= SIDE-B'S SPRITES FINALLY MATCH EVERYTHING ELSE
+= D-Taunt finally has an effect on it.
+
+Kirby: (MedK, HFF)
+= N. Yoshi copy ability is now actually N. Yoshi's ability.
++ D-Tilt pseudo crawl buff mentioned on the Renaissance patch applied
+= Copy ability D-Air fixed.
++ Now has a C. Yoshi copy ability.
++ All Neutral-B changes done to Yoshi applied.
+- Lloyd copy ability now has a cooldown of 5 frames.
++ G&W copy ability now matches G&W's move.
++ Yoshi copy ability grounded boost increased (6 > 6.1), so the timing for Yoshi B > F-Air isn't strict.
+- It also has cooldown so you can't stall for a minute with it.
++ Upper Cutter is now more intuitive. Hold the special button during uspec's startup, and he'll perform Upper Cutter. Tap it and he'll perform Final Cutter.
+- Upper Cutter got an extra 5 frames of startup lag for the sake of making it easier to use.
+
+Yoshi: (Strife)
+- REVERTED TO 1.1 Yoshi
+= Yoshi falls faster.
++ Air Speed increased
++ DJ Heavy Armour increased and DJ goes higher.
++ Egg has less cooldown.
+
+Peach: (27)
++ Peach bomber goes to heavyLand but bounces off shield and has more natural movement. Aerial drift can be controlled upon hit
++ Dtilt is now ultimate (hitboxes flipped), spike power / scaling data reworked (??,?? > 20,100)
++ Nair, bair and fair have shieldstun multipliers (??, ?? > 1.4, 1.2, 1.6) 
++  Fair has 8 frames of endlag removed
++ air acceleration made like ultimate (0.94 > 1.34)
++ Peach is now randy Johnson and her smash throw multiplier is 1.35x
++ stitch has shieldDamage of 50
+- Down smash damage reduced per hit (10 > 7)
+= parasol is rebalanced, more similar to ultimate. Not meant to kill. 
+= 1.1 rolls
++ new uair
++ full dtilt spikes
+- uair no longer puts you in hitstun for 7 years
+- stop complaining about dair i fixed it
+- shield stun on aerials slightly lowered
+
+Marth: (27, David)
++ forward smash startup reduced by two frames.
++ pummel damage increased (2 > 3).
++ forward throw endlag reduced by five frames. Attack angle, power and scaling adjusted (30, ??, ?? > 35, 69, 40).
++ up throw damage increased (3 > 6), power and scaling changed accordingly (?? , ?? > 30, 110).
++ back throw damage increased (5 > 7), angle and power modified.
++ dash attack weak hit 1 and strong hit angles changed (80, 130 > 60, 40)
++ tipper fair power and scaling modified.
++ weak nair second hit modified.
++ weak upair hitLag value normalized.
++ short hop lowered a tiny bit (10.6 > 10.3)
+= slightly different aerial physics (gravity is the same)
++ nair works
+- uair tipper weakened
+- bair tipper weakened
+= fair rebalanced
++ tipper : sourspot ratio of dair, utilt and fsmash reworked
++ dtilt 2 frames of endlag reduced
++ bthrow 2 frames of endlag reduced
++ dolphin slash goes like, a tiny bit higher
++ Fixed most bugs
+
+Sora: (David)
++ messed with the physics again, should feel better
+- significantly nerfed flowdash tech (note: this is the last time i'm changing it, it's not ever changing from this movement-wise)
+- significantly nerfed usmash on damage and growth
+- reduced damage on utilt
++ usmash reverted
++ Enabled sicko mode
++ The following interaction:
+  David: "sora buffs" *commits file*
+  Strife: "changelog pls"
+  David: "fair and fsmash"
+  Strife: "okay(?)"
+  David: "trust me thats all u need to know" *proceeds to commit Sonic buffs with no changelog*
+- Up Throw's knockback growth has been drastically increased. This was done to do away with the free Thunder setups.
++ This version of Sora has the Command Deck SpellHUD from 1.1.
++ Down Air and Up Air bounce values have been changed to be the average between 9b and Beta 1.1's
+
+Jigglypuff: (27, Trace)
++ buffed airaccel
++ dair overhauled, more like Ult
++ buffed sing sleep time (160 > 220)
++ buffed hitLag value on uthrow (-1 > -1.2)
+- Sing reverted no longer gay, Sing length changed from 220 to 160
+
+Pikachu: (27, David, Trace)
++ thunder jolt now land cancels on frame 17 (7 frame reduction of total move length)
++ fair dragdown slightly buffed (landing fair links slightly better)
++ dsmash works
++ QA slide anim can now edge cancel 
+- thunder scaling nerfed (50 > 40), damage reduced (17 > 15)
++ Pikachu has a taunt ability
++ thunder buffs! has a spiking sweetspot on the thunderbolt and on connect the hesitate actually works! Please DI
+- slight nerfs to the spark to compensate (100 > 90)
++ thunder jolts fly at a different angle and are a tiny bit stronger
++ ftilt is electric and scales higher
++ uair angle slightly lowered to facilitate combos (75 > 70)
++ dthrow sucks slightly less
+= various bug fixes
+- thunderbolt damage nerf (15 >10)
++ spark damage buffed (12 > 13)
+= the bolt still doesnt disappear AAAAAAAAAA
+- thunder jolts no longer have stun and have tiny kb
+- dragdown fair always tumbles
+- down throw angle slightly lower
++ skull bash secret tech
++ weak nair better combo extender
++ dsmash hits more vertically on the last hit
+= Fair Dragdown Removed. 
++ Tail Spike now matches melee
++ up b handbox size increased vertically so it wasn't so pathetic
++ bair angle change so that it was harder to di and actually killed before 120 3/4ths of the way to the blastzone 
+
+Mario: (David)
++ shorter heavyland animation
++ less endlag on fsmash, usmash, and dtilt
+
+Wario: (Strife, HFF)
++ Wario's air stats are more reminiscent of the main series games
++ Wario's Up Smash links together much better.
++ Wario's Dash Attack can now cancel into his Up Smash, it doesn't go far, but it's designed to increase Dash Attack's reward.
++ Wario's Chomp now heals. Each bite heals 0.5% whilst each throw heals 2%.
++ Wario's Chomp count increased from 2 -> 10.
++ Healing per bite increased: 0.5 -> 1
+- Max Bite count decreased: 10 -> 5
+- Throw damage nerfed: 6 -> 4
+- Chomp has three frames of cooldown after a successful grab and throw. This is to remove the chain chomp death combos that he had on some characters.
+7/18/2019
++ Fixed sloppy programming that broke DACUS
+
+Pit: (Strife, HFF)
++ Down Tilt and Dash Attack have less scaling.
++ Forward Air now does 10% and is a single hit move. It's a pretty good combo tool that scales well into being a good edgeguard move.
++ Up Air now does 8% and is a single hit move. It's a good juggling tool.
++ Back Air now sends vertically on the sourspot, allowing for better combos.
++ Arrows now hit vertically, making them more potent juggling tools at higher percents and even better edgeguard tools.
++ Initial dash: 1.29 -> 1.35
++ Air Speed: 7 -> 9
++ Air Accel: 0.95 -> 1.05
++ Air Decel: -0.065 -> -0.075
++ Forward Tilt's sourspot hitbox now hits the same angle as it's sweetspot
++ Up Air's scaling increased: 80 -> 100
++ Up Throw: BKB: 100 -> 70, KBG: 10 -> 30
++ Fair is MUCH faster. Reduced startup, reduced endlag, etc. It's now really good for combos.
+- Fair has less active frames, a bit less range due to removing the upwards pointing hitbox.
++ Sweetspot Bair is much stronger.
++ FSmash's late hit is a bit stronger.
++ Upperdash Arm's air hit has been unified with it's ground hit.
+- Fair has five frames of cooldown. It still combos into the same shit but it's not as spammable.
++ Jump height has been increased.
+- Air speed has been decreased from 9 -> 8
+= Forward Tilt has less scaling but more BKB.
+- Forward Air's damage decreased
+- Up Air is weaker
+- Arrow is slower.
+- Power of Flight travels a shorter distance
++ Run Speed: 9.2 -> 9.8
++ Air speed, acceleration, initial dash, deceleration are all reverted back to their pre-patch incarnations
++ FSmash, sweet Back Air and Up Air are much stronger.
++ Power of Flight goes further.
+7/18/2019
+= Fixed internal bug with feather effect.
+
+Mr. Game and Watch: (MedK, David)
++ DA behaves like vanilla, but keeps DACUS. DACUS also behaves like Brawl Falco's aka actual sliding DACUS.
++ Like in 1.1, Judge #7 spawns food even if you don't hit ppl.
++ Up Special's falling handbox is a bit taller, making it somewhat easier to grab the ledge.
++ Down Air has one frame where your X speed is reset. This makes it easier to cancel your forward momentum and fade back during the move.
++ In order to prevent unintentional deaths, you can no longer fast fall during Neutral Special. The aerial version also no longer links into the ground version, so there's no pause in the animation anymore.
++ Forward Air's animation is shorter overall, making it faster. (Overall means that all parts of the move changed, including startup, active frames, endlag, and landing lag.)
++ Spot Dodge and Tech Roll's animations have been shortened.
++ Up Special, depending on which frame you hit the opponent on, will deal out different levels of hitLag.
++ Up Throw's knockback scaling has been decreased.
++ Neutral Air's multi-hits have been overhauled and link better than ever.
+= Judge 9 has had its stun time decreased.
+
+Donkey Kong: (David, Strife)
+= New PA
+- Back Throw is ever so slightly weaker.
+- Dash Attack travel distance reduced.
++ Donkey Kong has his Beta 1.1 Get Up Attack, as well as the meme hurt frame.
++ Forward Special inflicts serious shield damage
++ Fixed all bugs
+
+Lloyd: (Strife, David)
++ Down Smash:
+  + Looping hits damage: 0.5 -> 0.8
+  + Looping hits angle: 75 -> 20
+  + Looping hits hitlag: 1.1
+  + Final hit hitlag: -1.1
+= Tiger Blade's followup should now consistently meteor smash 100% of the time
+= Tempest can no longer reverse hit.
++ Properly fixed Down Smash
++ Tempest now restores your jump if you hit it.
+- Tiger Blade's followup has set knockback.
++ Uair now actually looks like it should be a single hit move.
++ Tempest's final hit knockback adjusted allowing it to combo off the hit.
++ Tempest restores your jumps if you land it.
++ Tempest has 10 frames less endlag.
++ Jab's knockback scaling is completely gone. Luckily though, you won't be able to get infinite combos either.
++ Jab is currently the only move to get this, but LINKED ARTES returns.
++ During the multi-jab follow-up, you can press the following to combo the following attacks:
+  + Attack - Sonic Thrust
+  + Forward Smash - Beast.
+  + Side Special - Tempest
+  + Up Special - Tiger Blade
++ Rapid Jab multihits have more hitstun. This allows for the linked arte combos to be much more consistent.
++ Jab now has a finisher.
+- Jab deals much less damage
+- Forward Tilt does less damage
+- Up Tilt does less damage and has less knockback scaling.
+- Down Tilt does less damage
+- Dash Attack does less damage
+- Forward Smash does less damage, but the knockback was compensated
+- Up Smash does less damage
+- Neutral Air does less damage and has less knockback scaling
+- Forward Air does less damage and has less knockback scaling
+- Up Air does less damage and has less knockback scaling
+- Back Air does much less damage and has slightly compensated knockback
+- FThrow does less damage
+- BThrow does less damage
+- UThrow does less damage
+- DThrow does less damage
+- Ledge and Getup Attacks do less damage
+- Tempest does much less damage
+- Tiger Blade does less damage
+- Rising Falcon does less damage
++ Grounded Rising Falcon works like Aerial Rising Falcon now (i.e. how it's supposed to work)
+= 1.1. rolls
+- Raging Thrust (Jab -> Dash Attack followup) is now weaker than a normal Sonic Thrust.
+- Dash Attack, Up Smash and Down Smash have less knockback scaling.
+- Rising Falcon's descending meteor hit has much less knockback scaling.
++ Up Smash BKB: 40 -> 50
+- Tempest now has a full two seconds of cooldown after a hit.
++ Fair and Bair both have more BKB and KBG.
++ Dair now spikes on the final hit.
++ Rising Falcon and Tiger Blade's Finisher now have more KBG
++ Tiger Blade goes marginally higher.
++ Frame data improvements on Utilt and Fair.
++ DTilt does more base knockback and less scaling
++ Up Smash's hitbox no longer has a deadzone.
+- Raging Thrust (Jab's Sonic Thrust ender) damage reduced, and knockback reworked.
++ Lloyd's Tempest will now properly refresh upon heavyLand (bugfix)
+- Two frames of endlag added to Up Tilt.
+- Tempest can now only be used once per combo to remove the Bayonetta-style Tempest Ladders that Lloyd had.
++ + Jump height minorly increased.
++ Air acceleration, deceleration and speed increased and adjusted.
+= Gravity increased
++ A minor universal increase to hitstun.
+= Down Smash now uses the Grave Blade hit effects
++ Nair has more BKB and less KB scaling.
++ Up-B now properly restores Tempest so Tempest -> Tiger Blade techchase loops are possible again.
++ Down Smash multihits (in keeping with the Grave Blade look) buries opponents on the multihits.
++ Fixed most bugs
+
+Luigi: (MedK)
+= Tweaked hitlag, self-hitlag and camShake on some moves. D-Air is unfortunately intact btw.
++ 1.1 physics
+- Fast-fall speed made middleground between 1.1 and 3.2 (14 > 12.5).
+- Max air speed reduced (6.2437 > 6.1). Air accel too (0.96 > 0.7).
++ DA should be linking properly 100% of the time when not DI'd.
+
+Pichu: (David, Strife)
++ Pichu has a taunt ability
++ Initial dash increased.
++ FTilt now shocks the opponent and is much stronger
++ Bair is much stronger and also shocks the opponent.
++ Electro Ball now travels much faster and in a straight line.
++ Charged Electro Ball travels much faster and similarly in a straight line.
++ Wild Charge (Discharge Up-B) now sends opponents at a vertical angle and is much stronger.
++ Thunder's projectile is much stronger.
+- Ftilt and Bair now do 1% recoil damage.
++ NSpec now does 1% recoil damage (down from 3)
+= Dair is no longer a stall-then-fall
+- Wild Charge has less knockback scaling.
+
+Ness: (David, Strife)
++ Ness has a taunt ability
++ Dash Attack's hitboxes should be fixed.
++ USmash is much stronger
++ UThrow now works as a combo throw.
++ DThrow has two less frames of endlag and puts the opponent in a tech situation
++ PK Fire now detonates on the ground.
+- PK Fire has 15 frames of cooldown
+- Dash Attack's dashback glitch is fixed.
++ Ness's effects got a visual upgrade.
+- PK Fire no longer goes backwards.
+- DThrow hitLag halved. (0.75)
+- DThrow power and kb constant decreased.
+- Dthrow SDI distance upped to 5
+- Dthrow endlag upped massively.
+
+Bandana Dee: (David, Strife)
+- can't jump after up b, completely changed how dsmash works, uair and usmash are weaker. also, 1.1 rolls
+- Run speed decreased to 9.8
+- Air speed decreased to 7.5
+- Air acceleration decreased to 1
+- Initial dash decreased to 1.07
+- Up Special distance decreased from 17 to 15.
+
+Bowser: (Strife, 27, David)
++ DThrow's BKB upped a lot.
++ DThrow's endlag shaved off by 9 frames.
++ DThrow's hitstun upped
++ Bowser's Flying Slam has an Ultimate style explosion hitbox and it burns now
++ Flying Slam now uses the effect from FSmash because it looks better
+- Flying Slam no longer gives Bowser a horizontal boost in the air
+- Dash Attack Cancel Flying Slam (DACFS) travels a much shorter distance
+- no armor LOL
++ 3rd and 4th delay on DACFS. 3rd delay is the new first (frame 3) and goes slightly farther, 4th delay is the last (frame 6) and goes half the distance of the next shortest delay.
++ dthrow has 2f endlag shaved off
++ dtilt better for combos please DI
++ Fixed all bugs
+7/18/2019
++ Is playable again
+
+Chibi-Robo: (Strife, MedK)
++ FTilt has a bit more hitlag and hitstun. *Should* be better on shield
++ DSmash's sour and sweetspot have had their BKB upped by 20 so the sourspot shouldn't be completely worthless whilst the sweetspot is more rewarding
++ FThrow sends at a higher angle.
++ BThrow sends at a lower angle. Knockback compensated.
++ UThrow is a very functional kill throw.
++ Chibi-Blaster does a bit more hitstun, albeit not enough to combo.
++ Pick Up now works like Ness' Down-B.
+
+Fox: (27)
+=a whole bunch of shit
++utilt sped up by 2 frames. Also has ground and aerial hitboxes.
++dtilt endlag reduced by 2 frames.
++ ssbu fair
++ dash attack reworked
++ down throw fixed
++ grounded laser endlag reduced by a lot
++ if side b is shortened, allows action. Side b cannot be used again until a state change occurs.
++fair last hit is slightly easier to combo off of
++ air accel boosted from 0.7 to 1
+
+Falco: (27)
++ uair landing lag reduced a lot
++ dair endlag reduced by 1 frame
++ aerial laser endlag reduced by a good amount
++ fire bird is now twisting fox without the speed reduction
++ reverse bair is now as strong as strong bair for the first 2 frames
++ airaccel increased (.7 > .85)
++ uthrow / bthrow lasers + throws reworked slightly
++ shine bkb slightly reduced, sdi distance increased
++ if side b is shortened, allows action. Side b cannot be used again until a ledge grab or 60 frames pass.
+
+Zelda: (Strife)
+- Initial Dash: 0.97 -> 0.9
++ Up-B now pretty much guarantees linking into both hits.
++ Down Tilt can be transform cancelled.
+- Weight decreased.
+- Speed decreased.
+- Down Throw has more base knockback and less scaling, eliminating chaingrabs.
+- Din's has less scaling.
+- Farore's has less KB scaling.
+- Transform now has 15 frames of cooldown.
+
+Sheik: (Strife, David, HFF)
+- Fair and Uair KBG lowered by 10.
+- Bouncing Fish KBG: 100 -> 80
+- Dair: Angle is now 270, KBG 75 -> 45. Dair has a niche gimping use.
+- Dair is reverted. It was accidentally a little too good lmao.
++ Bouncing Fish's reverse hitbox doesn't exist anymore.
++ Up Smash has a better tipper hitbox
++ Forward and Down Throw can now be Transform-Cancelled.
++ Forward Throw is a better combo tool.
+= Dair is now a divekick with a spike hitbox.
+- Aerials have had a 2%-4% decrease across the board.
+- Bair has had a miniscule KBConstant decrease.
+- Transform now has 15 frames of cooldown.
++ Shorthop is lowered.
+= Down Air is the way it was before the dairdashing tech was implemented.
++ Forward Air's base knockback and scaling has been adjusted to account for the prior damage reduction (It's not going to kill you at 80, but it's still a decent offstage tool.)
++ Back Air damage has been reverted, meaning it deals 12% instead of 10%.
+- Individual needle damage has been slightly reduced.
+- Soft Neutral Air is stronger, but hard Neutral Air is weaker. (NOT relative to each other. Relative to how they were before.)
+7/18/2019
++ Fixed sloppy programming that broke DACUS
+
+Mega Man: (Strife, MedK)
+- Nair no longer has an autocancel window.
+- Nair damage per hit reduced: 3 -> 1.5
+- Mega Buster's effective range (i.e. the range where pellets cause hitstun) is reduced.
+- Up-B now has super armor if MM's damage is below 50.
+- Up-B now has an heavy armor of 7, if MM's damage is between 50 and 59.
+- Up-B won't tank anything if MM's damage is above 60.
+
+Tails: (27, David)
++ Nair is better for vertical combos
++ startup on aerial nspec is slightly reduced + aerial projectile angle raised a lot, grounded has some kbC as opposed to virtually none
++ Tails fullhop slightly buffed
++ Tails' aerial physics reworked
++ reduce spindash onHit anim by a couple frames, raised angle of aerial spindash and slightly lowered scaling
++ utilt bkb reduced significantly
++ bair has a weak hit on it, also a 2 frame window where it autocancels during tails' propulsion
++ usmash always autocancels but frame data hasnt been changed
++ dash attack is slightly better for combos (don't worry it still sucks)
++ dsmash later hits are now the ones with the wonky angle and the first has the comparatively forgiving one
+- bthrow angle slightly raised
+- uthrow angle slightly lowered
+= will amend as am able
++ fixed tailsbot throwing arc
++ reverted uthrow angle
+- Down Air, Up Air, Forward Air, and Neutral Air all temporarily change your physics to make you hit the ground faster than usual. You will have to work and think a bit more quickly to maintain your aerial combos and momentum.
++ Tails' global max Y speed has been decreased, meaning his top fall speed is slower than before.
++ Up Smash can be jumped out of at the apex of its rise.
+- Up Smash has virtually no kill power and deals less damage. It is much more focused around movement and offensively covering vertical travel.
+- Down Tilt deals less damage. This in particular was done to compensate for how ridiculously good it is as a neutral tool with the new crouching mechanics.
+- Down Special deals less damage.
+
+Zero Suit Samus: (27)
+= UP SPECIAL HAS BEEN CHANGED FROM PLASMA WIRE TO BOOST KICK.
++ Flip jump has been sped up by 6 frames
+- Flip Kick has had its active frames reduced to 3. The first frame spikes, the second frame sends outward, and the last frame is a weak hit. Additionally, the spike hit is weaker.
+= Secret Flip Jump Tech
++ Flip Kick can bury grounded opponents.
++ fair has slightly been returned to its former glory but still wont connect ffs
+= fthrow is now a tech chase throw (always puts in knockdown).
++ upthrow is now a kill throw at high %, and is faster.
+- uthrow now no longer has practical combo application.
+= dthrow now sends in front of Samus. Equal because it makes her up air strings a little better out of dthrow, but loses dthrow neutral hop bair.
++ plasma whip connects slightly better and is slightly stronger.
+- max air speed slightly decreased
++ air accel slightly increased
++ initial dash slightly buffed
++ uptilt combos better.
++ PSWD now sends into idle instead of her landing animation to make it comparable to IDI.
++ nair is slightly reworked. FAF nair is traditional, but the later hits are a stronger "get off me" option. reverse nair is like SSBU ike nair.
+- Upair angle slightly lowered, scales faster, and has it's hitLag value lowered.
++ Jab is very slightly better
+- Upsmash slightly worse at killing at the cost of looking better.
++ Paralyzer no longer always goes into the start of the charging animation when going from ground to air.
+= Secret Paralyzer stuff too
+
+Luffy: (MedK)
+7/15/2019
+- Shorthop reverted to vanilla (8.3 > 8.5).
++ Secret tech that MedK wants you to find out for yourself
++ U-Tilt hitbox on first active frame drastically increased to hit small opponents.
++ DA now absorbs projectiles.
++ All smash attacks are slightly stronger.
++ F-Air is *much* stronger, and it no longer has a sour spot.
++ NEW NEUTRAL-B!!!
++ Side-B is three frames faster.
+= CPUs now know how to use forward and down specials.
++ Up-B is two frames faster. It also won't reduce your X Speed.
+- However, its boost is much closer to vanilla due to the below change.
++ Down-B was overhauled, it now has three working boosts (all of them better than the old boosts), but the last one makes Luffy helpless. The uses also reset if you get hit, grabbed or KO'd.
++ The first boost can be shortened by pressing downwards, and all other boosts can be acted out of sooner.
++ F-Throw kills sooner. D-Throw also kills, but it still acts the same when the opponent's damage is low :eyes:
+
+
+STAGES:
+
+Emerald Cave: (MatZ, David)
+? David changed it somehow
++ Emerald Cave has a higher ceiling.
+
+Waiting Room: (David)
+= Default waiting room is back.
+
+PAC-MAZE: (David)
++ I went and finished up blast zones and other aspects of PAC-MAZE. It should be legal now.
+
+Skull Fortress: (Unkown7, David)
++ Balanced Skull Fortress
++ For now, this is a port of an old stage by Unkown. It was forgotten long ago, but now it's back. Imagine TOS but it got its shit kicked in.
++ Corrected the left ledge Collison on Skull Fortress. Ledge Attacks no longer equal death
+
+Sky Sanctuary Zone: (David)
++ Sky Sanctuary Zone has more lenient blast zones.
